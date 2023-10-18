@@ -1,12 +1,12 @@
 {
     "builds": [{
-        "src": "webblog/asgi.py",
+        "src": "webblog/wsgi.py",
         "use": "@vercel/python"
     }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "webblog/asgi.py"
+            "dest": "webblog/wsgi.py"
         }
     ]
 }
